@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chatset="utf-8">
+        <title>About</title>
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+        <header class="not_home">
+            <h2>About</h2>
+            <div id="main">
+                <button id="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+            <nav id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a class="sidebar_item" href="index.html">Home</a>
+                <a class="sidebar_item" href="about.html">About</a>
+                <a class="sidebar_item" href="#skills_text">Experience</a>
+            </nav>
+        </header>
+        <section id="biography_text"> <!-- main about section -->
+            <img class=hike src="hike.jpeg">
+                <h3 class="large_biography">Hi, I'm Owen Akel</h3>
+                <p class="small_biography"> 
+                    I was born in Arkansas, but moved to San Francisco at the age of three where
+                    I attended middle and high school before relocating across the country
+                    to Dartmouth for college (I am currently a '26!). At Dartmouth, I plan to study Computer 
+                    Science and Economics, though I am also interested in music and Latin.
+                </p>
+                <h4 class="medium_interests"><strong>Interests</strong></h4>
+                <p class="small_interests">
+                    Extracurricularly, I am involved in 
+                    <a class="in_text_link" href="https://tamidgroup.org/consulting/" target="_blank">TAMID Dartmouth College</a> and the
+                    <a class="in_text_link" href="https://dippnh.org/" target="_blank">Dartmouth Investment and Philanthropy Program</a>. 
+                    I also like to play basketball (I'm on the club basketball team), practice guitar, listen to
+                    music, and spend time outdoors with my friends.
+                </p>
+        </section>
+        <section id="skills_text">
+            <h4 class="medium_skills">My Skills</h4>
+            <p class="small_skills">
+                In high school, I worked extensively with Python and Java (and briefly with C and C++ through arduino). I've since 
+                further developed these skills at Dartmouth in CS 1 and 10, as well as gained experience using Selenium and Selenium
+                WebDriver through my work with TAMID. 
+            </p>
+            <p class="small_skills">
+                This website is my first experience with UX and UI development, as well as with HTML, CSS, and Javascript. 
+                I have really enjoyed teaching myself about webdev and hope to continue learning and building my skills at 
+                DALI!
+            </p>
+            <div class="skills">
+                <img class="skills_img" src="python.png">
+                <img class="skills_img" src="java.png">
+                <img class="skills_img" src="selenium.png">
+                <img class="skills_img" src="arduino.png">
+            </div>
+        </section>
+        <script>
+            function openNav() {
+                document.getElementById("sidebar").style.width = "20vw";
+                document.getElementById("openbtn").style.color = "white";
+            }
+            function closeNav() {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("openbtn").style.color = "rgba(0, 200, 100, 0.4)";
+            }
+        </script>
+    </body>
+</html>
